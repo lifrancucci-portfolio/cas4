@@ -1,3 +1,259 @@
+/* ************** VARIABLES ************** */
+:root {
+  /* Colores */
+  --clr-light: rgb(255, 255, 255);
+  --clr-dark: rgb(0, 0, 0);
+  /* Fuentes */
+  --font-main: 'Roboto', sans-serif;
+}
+
+/* *************** GENERAL *************** */
 *, *::after, *::before {
   box-sizing: border-box;
+}
+html {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: lighter;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section,
+.section {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 3rem 2rem;
+}
+.section-title {
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.gallery {
+  justify-content: center;
+  align-items: center;
+}
+
+/* *************** HEADER *************** */
+.header {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 2rem;
+  z-index: 100;
+}
+.main-nav {
+  padding-right: 2rem;
+}
+.main-nav h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.nav-ul {
+  display: none;
+}
+
+/* *************** HERO *************** */
+.hero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.hero-img {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+}
+.hero-img img {
+  width: 100%;
+}
+.hero-overlay {
+  /* border: 1px solid red; */
+  display: flex;
+  position: absolute;
+  width: 100%;
+  /* width: 80%; */
+  height: 100%;
+}
+.overlay-piece {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  background-color: var(--clr-light);
+}
+.overlay-char {
+  font-size: 17rem;
+  font-weight: bold;
+}
+
+/* *************** GALERIA *************** */
+.carousel {
+  /* border: 1px solid red; */
+  display: flex;
+}
+.carousel-inner {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.carousel-inner img {
+  /* max-width: 500px; */
+  max-height: 500px;
+}
+
+/* *************** MODELOS *************** */
+.models {
+  width: 90%;
+}
+.models-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  width: 100%;
+}
+.models-grid > div {
+  border: 1px solid red;
+}
+
+/* *********** ESPECIFICACIONES *********** */
+.specs span {
+  border: 1px solid red;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.materials {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  /* height: 3rem; */
+  margin: 2rem 0 3rem;
+}
+.material {
+  border: 1px solid red;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+.modules {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modules-anim {
+  border: 1px solid green;
+  width: 500px;
+  height: 250px;
+  margin: 1rem;
+}
+
+/* *********** VIDEO *********** */
+.video {
+  padding: 0;
+  margin: 3rem 0 0 0;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: sticky;
+}
+.video video {
+  width: 100%;
+}
+
+/* *********** CONTACTO *********** */
+.contact-opacity-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.contact {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: white;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form .section-title {
+  color: var(--clr-light);
+}
+.contact > div {
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 2rem 5rem;
+}
+
+/* CONTACT FORM */
+.form-container {
+  background-color: var(--clr-dark);
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 350px;
+  height: 350px;
+}
+.form input,
+.form textarea {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  width: 100%;
+  padding: .5rem;
+}
+.form textarea {
+  height: 200px;
+}
+
+/* SOCIAL LINKS */
+.social {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.brand-title {
+  font-size: 8rem;
+  font-weight: bold;
+}
+.social-links i {
+  font-size: 2rem;
+  margin: 1rem;
 }
