@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body id="body">
 
 <!-- ************* HEADER ************* -->
   <header class="header">
@@ -89,10 +89,39 @@
 
   <!-- Implementar carousel aquí -->
     <section class="section gallery">
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="ph/test-img.jpeg" alt="Test Image">
+      <div id="gallery-carousel" class="carousel">
+
+        <button class="carousel__button carousel__button--left">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="ph/gallery-carousel-1.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="ph/gallery-carousel-2.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="ph/gallery-carousel-3.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="ph/gallery-carousel-4.png" alt="Test Image">
+            </li>
+          </ul>
         </div>
+
+        <button class="carousel__button carousel__button--right">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <!-- <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div> -->
+
       </div>
     </section>
     <!-- ----------------------- -->
@@ -203,17 +232,46 @@
 
 
 
-  <!-- *********** GALERIA 2 ************* -->
+    <!-- *********** GALERIA 2 *********** -->
 
-  <!-- Implementar carousel aquí -->
-    <section class="section gallery">
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="ph/test-img.jpeg" alt="Test Image">
+    <!-- Implementar carousel aquí -->
+      <section class="section gallery">
+        <div id="backstage-carousel" class="carousel">
+
+          <button class="carousel__button carousel__button--left">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="ph/gallery-carousel-1.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="ph/gallery-carousel-2.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="ph/gallery-carousel-3.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="ph/gallery-carousel-4.png" alt="Test Image">
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel__button carousel__button--right">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+
+          <!-- <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div> -->
+
         </div>
-      </div>
-    </section>
-    <!-- ----------------------- -->
+      </section>
+      <!-- ----------------------- -->
 
   <!-- *********** VIDEO ************* -->
     <section class="video">
@@ -223,7 +281,10 @@
     </section>
 
   <!-- *********** CONTACTO ************* -->
-    <div class="contact-opacity-layer">
+    <div id="log">
+
+    </div>
+    <div id="contact-ol" class="contact-ol">
       <section class="contact">
 
         <div class="contact-form">
@@ -263,7 +324,6 @@
 
       </section>
     </div>
-
 
   </div>
 
