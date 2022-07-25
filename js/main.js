@@ -1,6 +1,6 @@
 function contentLoaded() {
 
-  // Funcionalidad de los carousels
+  // CAROUSELS
   const galleryCarousel = document.getElementById('gallery-carousel');
   const backstageCarousel = document.getElementById('backstage-carousel');
 
@@ -54,5 +54,19 @@ function contentLoaded() {
   // Llamar a la función para cada carousel de la página
   carouselFunctionality(galleryCarousel);
   carouselFunctionality(backstageCarousel);
+
+  // MODELOS
+  const models = document.querySelectorAll('.model__container');
+  const selected = document.getElementById('model__selected');
+
+  // console.log(models);
+  models.forEach(model => {
+    model.addEventListener('mouseover', () => {
+      let content = model.innerHTML;
+
+      console.log(content);
+      selected.innerHTML = content;
+    });
+  })
 
 }
