@@ -100,15 +100,54 @@
   <!-- ************* MODELOS ************* -->
     <section class="section models">
       <h2 class="section-title">Nuestros Modelos</h2>
-      <div class="models-grid">
+
+      <div class="models-display">
         <div class="models-sidebar left">
-          1
+
+          <div class="model">
+            <p class="model-name">C2</p>
+            <img class="model-img" src="img/c2@4x.png" alt="">
+          </div>
+
+          <div class="model">
+            <p class="model-name">C4</p>
+            <img class="model-img" src="img/c4@4x.png" alt="">
+          </div>
+
+          <div class="model">
+            <p class="model-name">C5</p>
+            <img class="model-img" src="img/c5@4x.png" alt="">
+          </div>
+
+          <div class="model">
+            <p class="model-name">C6</p>
+            <img class="model-img" src="img/c6@4x.png" alt="">
+          </div>
+
         </div>
-        <div class="model-display">
-          2
+<!-- ************************************* -->
+        <div class="model-selected">
+          <div class="model">
+            <p class="model-name">C2</p>
+            <img class="model-img" src="img/c2@4x.png" alt="">
+          </div>
         </div>
+<!-- ************************************* -->
         <div class="models-sidebar right">
-          3
+          <div class="model">
+            <p class="model-name">C7</p>
+            <img class="model-img" src="img/c7@4x.png" alt="">
+          </div>
+
+          <div class="model">
+            <p class="model-name">C8</p>
+            <img class="model-img" src="img/c8@4x.png" alt="">
+          </div>
+
+          <div class="model">
+            <p class="model-name">C9</p>
+            <img class="model-img" src="img/c9@4x.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -121,20 +160,20 @@
         <span>MATERIALES</span> <br>
         Carpinterías de PVC con vidrio DVH <br>
         Revestimiento interior multilaminado fenólico. Acabado Hidrolaca <br>
-        Revestimiento exterior chapa color  negro (preguntar por opciones de color) <br>
+        Revestimiento exterior chapa color  negro <br>
         Cubierta inclinada de chapa acanalada prepintada color negro <br>
         Aislación: bastidor de madera con lana de vidrio
         <br><br>
       </p>
       <div class="materials">
         <div class="material">
-
+          <img src="img/ph_fenolico.jpg" alt="Material: Fenólico">
         </div>
         <div class="material">
-
+          <img src="img/ph_quadroline1.jpg" alt="Material: Chapa Quadroline">
         </div>
         <div class="material">
-
+          <img src="img/ph_vidrio2.jpg" alt="Material: Vidrio DVH">
         </div>
       </div>
 
@@ -155,14 +194,14 @@
       </p>
 
       <div class="modules">
-        <div class="modules-anim">
-          <p style="text-align: center;">
-            **** AQUÍ VA EL GIF ANIMADO DEL ARMADO DE LA CASA ****
-          </p>
-        </div>
+        <video muted="" autoplay="" loop="">
+          <source src="video/animacion.mp4" type="video/mp4">
+        </video>
       </div>
 
     </section>
+
+
 
   <!-- *********** GALERIA 2 ************* -->
 
@@ -178,7 +217,7 @@
 
   <!-- *********** VIDEO ************* -->
     <section class="video">
-      <video muted="" autoplay="">
+      <video muted="" autoplay="" loop="">
         <source src="video/bg.mp4" type="video/mp4">
       </video>
     </section>
@@ -200,9 +239,14 @@
               <input type="email" id="email" name="email" value="Email">
 
               <label for="subject"></label>
-              <textarea id="subject" name="subject" placeholder="">Mensaje</textarea>
+              <textarea id="subject" name="subject" placeholder="Dejanos tu mensaje...">Mensaje</textarea>
 
-              <input type="submit" name="" value="Enviar">
+              <input class="checkbox" type="checkbox" id="send-info" name="gacetilla" value="gacetilla">
+              <label class="checkbox-label" for="send-info">Quiero recibir la gacetilla</label>
+
+              <div class="submit">
+                <input type="submit" name="" value="Enviar">
+              </div>
 
             </form>
           </div>
