@@ -1,5 +1,19 @@
 function contentLoaded() {
 
+  // INTRO
+  // const introPieces = Array.from(document.querySelector('.hero-overlay').children);
+  //
+  // for(let i = 0; i < introPieces.length;) {
+  //   introPieces[i].classList.add('fade-out');
+  //   introPieces[i].addEventListener('transitionend', i++);
+  // }
+
+
+  // function introFadeOut() {
+  //
+  // }
+  // introFadeOut();
+
   // CAROUSELS
   const galleryCarousel = document.getElementById('gallery-carousel');
   const backstageCarousel = document.getElementById('backstage-carousel');
@@ -59,14 +73,66 @@ function contentLoaded() {
   const models = document.querySelectorAll('.model__container');
   const selected = document.getElementById('model__selected');
 
-  // console.log(models);
   models.forEach(model => {
     model.addEventListener('mouseover', () => {
       let content = model.innerHTML;
-
-      console.log(content);
       selected.innerHTML = content;
     });
   })
+
+
+  // CONTACTO
+  const opLayer = document.getElementById('contact-ol');
+  console.log(opLayer.offsetTop);
+
+  function normalize() {
+    // Tomar el rango que va del inicio del Div hasta el final, y normalizarlo a una escala de 0 a 1
+    let min = 0;
+    let max = 1;
+
+    let rangeMin = 0;
+    let rangeMax = opLayer.clientHeight + (window.innerHeight / 2);
+
+    // VALUE: llega a 0 cuando estamos a media pantalla del Div a mostrar
+    let value = window.scrollY - (opLayer.offsetTop - rangeMax);
+    console.log("Offset: " + offset);
+
+    // let value = ;
+    let newValue = (max - min) / (rangeMax - rangeMin) * (offset - min) + rangeMin;
+
+    console.log("New Value: " + newValue);
+    opLayer.style.opacity = newValue;
+  }
+  window.addEventListener('scroll', normalize);
+
+
+  // let showData = function() {
+  //
+  //   const currentPos = window.scrollY;
+  //   const windowH = window.innerHeight / 2;
+  //   console.log("Window H: " + windowH);
+  //   console.log("Current Position: " + currentPos);
+  //   console.log("Div OffsetTop: " + opLayer.offsetTop);
+  //   console.log("Div Height: " + opLayer.clientHeight);
+  // }
+  // window.addEventListener('scroll', showData);
+
+  // VIDEO
+  // const videoLayer = document.getElementById('video');
+  //
+  // let changeOpacity = function(el) {
+  //
+  //   return function curried_func(e) {
+  //     let currentPos = window.scrollY;
+  //     let opacity = currentPos / el.offsetTop;
+  //
+  //     if(opacity < 1) {
+  //       el.style.opacity = opacity;
+  //     }
+  //   }
+  // }
+  // CHANGE OPACITY
+  // window.addEventListener('scroll', changeOpacity(opLayer));
+  // window.addEventListener('scroll', changeOpacity(videoLayer));
 
 }

@@ -106,7 +106,12 @@ section,
   justify-content: center;
   width: 25%;
   background-color: var(--clr-light);
+  transition: all .5s ease-out;
 }
+.overlay-piece.fade-out {
+  background-color: transparent;
+}
+
 .overlay-char {
   font-size: 17rem;
   font-weight: bold;
@@ -287,7 +292,7 @@ section,
   /* border: 1px solid red; */
   width: 10rem;
   height: 10rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 .material img {
   width: 100%;
@@ -316,8 +321,12 @@ section,
   left: 0;
   position: sticky;
   overflow: hidden;
+  /* opacity: 0; */
 }
 .video video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100vw;
 }
 
@@ -330,7 +339,7 @@ section,
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  /* opacity: 0; */
+  opacity: 0;
 }
 .contact {
   flex-direction: row;
@@ -398,7 +407,6 @@ section,
   border: none;
   border-radius: 5px;
 }
-
 
 /* SOCIAL LINKS */
 .social {
