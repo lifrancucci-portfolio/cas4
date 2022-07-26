@@ -90,23 +90,31 @@ function contentLoaded() {
 
   let changeOpacity = function(el) {
 
-    return function applyOpacity(e) {
+    return function curriedApplyOpacity(e) {
       // Tomar el rango que va del inicio del Div hasta el final, y normalizarlo a una escala de 0 a 1
+
+      // Valores de salida
       let min = 0;
       let max = 1;
 
+      // Valores de entrada
       let rangeMin = 0;
-      let rangeMax = el.clientHeight + (window.innerHeight / 2);
+      let rangeMax = el.clientHeight + (window.innerHeight / 3);
 
       // VALUE: llega a 0 cuando estamos a media pantalla del Div a mostrar
-      let value = window.scrollY - (el.offsetTop - rangeMax);
-      console.log("Offset: " + value);
+      let posInDiv = window.scrollY - (el.offsetTop - rangeMax);
+      console.log("Offset: " + posInDiv);
 
-      // let value = ;
-      let newValue = (max - min) / (rangeMax - rangeMin) * (value - min) + rangeMin;
+      // OPACITY se calcula con una función de normalización que determina el inicio del Div + 2/3 de la altura de la ventana como 0, y el final del Div como 1
 
-      console.log("New Value: " + newValue);
-      el.style.opacity = newValue;2
+      // Versión completa:
+      // let opacity = (max - min) / (rangeMax - rangeMin) * (posInDiv - min) + rangeMin;
+
+      // Versión simplificada (si ambos valores mínimos son 0):
+      let opacity = max / rangeMax * posInDiv;
+
+      console.log("Opacity: " + opacity);
+      el.style.opacity = opacity;
     };
 
   }
