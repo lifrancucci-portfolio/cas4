@@ -1,18 +1,20 @@
 function contentLoaded() {
 
-  // INTRO
-  // const introPieces = Array.from(document.querySelector('.hero-overlay').children);
-  //
-  // for(let i = 0; i < introPieces.length;) {
-  //   introPieces[i].classList.add('fade-out');
-  //   introPieces[i].addEventListener('transitionend', i++);
-  // }
+  // INTRO FADE-OUT
+  const heroOverlay = document.getElementById('hero-overlay');
+  const introPieces = Array.from(document.querySelector('.hero-overlay').children);
 
+  (function introFadeOut(n) {
+    if(n < introPieces.length) {
+      setTimeout(function() {
+        let i = n -1;
+        introPieces[i].classList.add('fade-out');
+        introFadeOut(n);
+      }, 1000);
+      n++;
+    }
+  } (0));
 
-  // function introFadeOut() {
-  //
-  // }
-  // introFadeOut();
 
   // CAROUSELS
   const galleryCarousel = document.getElementById('gallery-carousel');
@@ -80,14 +82,13 @@ function contentLoaded() {
     });
   })
 
-
   // CONTACTO
   const opLayer = document.getElementById('contact-ol');
-  console.log(opLayer.offsetTop);
 
   // VIDEO
   const videoLayer = document.getElementById('video');
 
+  // CAMBIAR LA OPACIDAD DE LAS CAPAS
   let changeOpacity = function(el) {
 
     return function curriedApplyOpacity(e) {
@@ -103,7 +104,6 @@ function contentLoaded() {
 
       // VALUE: llega a 0 cuando estamos a media pantalla del Div a mostrar
       let posInDiv = window.scrollY - (el.offsetTop - rangeMax);
-      console.log("Offset: " + posInDiv);
 
       // OPACITY se calcula con una función de normalización que determina el inicio del Div + 2/3 de la altura de la ventana como 0, y el final del Div como 1
 
@@ -112,8 +112,6 @@ function contentLoaded() {
 
       // Versión simplificada (si ambos valores mínimos son 0):
       let opacity = max / rangeMax * posInDiv;
-
-      console.log("Opacity: " + opacity);
       el.style.opacity = opacity;
     };
 
