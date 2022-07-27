@@ -1,8 +1,8 @@
 function contentLoaded() {
 
   // INTRO FADE-OUT
-  const heroOverlay = document.getElementById('hero-overlay');
-  const introPieces = Array.from(document.querySelector('.hero-overlay').children);
+  const heroOverlay = document.getElementById('hero__overlay');
+  const introPieces = Array.from(document.querySelector('.hero__overlay').children);
 
   (function introFadeOut(n) {
     if(n < introPieces.length) {
@@ -14,27 +14,6 @@ function contentLoaded() {
       n++;
     }
   } (0));
-
-  // MENU
-  const navLogo = document.getElementById('nav-title');
-  const navMenu = document.getElementById('nav-ul');
-
-  function toggleMenu() {
-    if(!navMenu.classList.contains('show-menu')) {
-      navMenu.classList.add('show-menu');
-    } else {
-      navMenu.classList.remove('show-menu');
-    }
-  }
-  function hideOnScroll() {
-    if(navMenu.classList.contains('show-menu')) {
-      navMenu.classList.remove('show-menu');
-    }
-  }
-
-  navLogo.addEventListener('click', toggleMenu);
-  window.addEventListener('scroll', hideOnScroll);
-
 
   // CAROUSELS
   const galleryCarousel = document.getElementById('gallery-carousel');
@@ -120,7 +99,7 @@ function contentLoaded() {
 
       // Valores de entrada
       let rangeMin = 0;
-      let rangeMax = el.clientHeight + (window.innerHeight / 3);
+      let rangeMax = el.clientHeight + (window.innerHeight * .025);
 
       // VALUE: llega a 0 cuando estamos a media pantalla del Div a mostrar
       let posInDiv = window.scrollY - (el.offsetTop - rangeMax);
