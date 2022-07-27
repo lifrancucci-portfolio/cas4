@@ -56,26 +56,48 @@ section,
 
 /* *************** HEADER *************** */
 .header {
-  /* border: 1px solid red; */
+  /* border: 1px solid green; */
   display: flex;
   position: sticky;
   top: 0;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   width: 100vw;
   height: 4rem;
   z-index: 99;
 }
 .main-nav {
-  padding-right: 4rem;
+  /* border: 1px solid red; */
+  position: relative;
 }
 .main-nav h1 {
-  /* padding-top: 1rem; */
+  /* border: 1px solid yellow; */
+  padding-right: 4rem;
   font-size: 2rem;
   text-transform: uppercase;
 }
 .nav-ul {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  text-align: right;
+  line-height: 1.5;
+  top: 100%;
+  right: 0;
+  padding-top: 1rem;
+  padding-right: 4rem;
+  width: 250px;
+  opacity: 0;
+  transform-origin: top;
+  transform: scale(1, 0);
+  transition: all .2s ease-in;
+}
+.nav-ul.show-menu {
+  /* display: block; */
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.nav-ul a {
+  cursor: pointer;
 }
 
 /* *************** HERO *************** */
@@ -448,9 +470,8 @@ section,
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid red;
   width: 25vw;
-  padding: 2rem;
+  padding: 3rem;
   font-size: .8rem;
   line-height: 1.5;
 }
@@ -481,17 +502,15 @@ section,
   font-weight: bold;
 }
 
-
 .model-gallery {
   display: flex;
   flex-direction: column;
   width: 75vw;
-  margin: 0;
-  margin-left: 25vw;
-  padding: 0;
+  margin: 0 3rem 3rem 25vw;
+  padding: 0 3rem;
 }
 .model-gallery > div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .model-gallery__renders {
   display: flex;
@@ -508,15 +527,46 @@ section,
   height: 100%;
 }
 .model-gallery .second-col {
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 40%;
 }
+.col__img--top {
+  margin-bottom: 1rem;
+}
+
 .model-gallery__blueprints {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 3rem;
 }
 .model-gallery__blueprints img {
   width: 100%;
+}
+.model-gallery__pictures {
+  display: flex;
+  flex-direction: column;
+}
+.model-gallery__pictures .first-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model-gallery__pictures .first-row img {
+  width: 50%;
+  padding: 1rem;
+}
+
+.model-gallery__pictures .second-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model-gallery__pictures .second-row img {
+  width: 100%;
+  padding: 1rem;
 }
