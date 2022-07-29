@@ -1,6 +1,7 @@
 function loadMenu() {
   // MENU
-  const navLogo = document.getElementById('nav-title');
+  const desktopNav = document.getElementById('nav-title');
+  const mobileNav = document.getElementById('mobile-menu');
   const navMenu = document.getElementById('nav-ul');
 
   function toggleMenu() {
@@ -10,12 +11,14 @@ function loadMenu() {
       navMenu.classList.remove('show-menu');
     }
   }
+
+  desktopNav.addEventListener('click', toggleMenu);
+  mobileNav.addEventListener('click', toggleMenu);
+
   function hideOnScroll() {
     if(navMenu.classList.contains('show-menu')) {
       navMenu.classList.remove('show-menu');
     }
   }
-
-  navLogo.addEventListener('click', toggleMenu);
   window.addEventListener('scroll', hideOnScroll);
 }
