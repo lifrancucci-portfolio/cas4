@@ -326,26 +326,68 @@
     <div id="contact-ol" class="contact-ol">
       <section id="contact" class="contact">
 
+        <?php
+
+        $message_sent = false;
+
+        if(isset($_POST['email']) && $_POST['email'] != '') {
+
+          if(filter_var($_POST['name'], FILTER_VALIDATE_EMAIL)) {
+
+            $name = $_POST['name'];
+            $mailFrom = $_POST['email'];
+            $message = $_POST['subject'];
+
+            if($_POST['send-info'] == 'checked') {
+              $sendInfo = "Enviar gacetilla";
+            }
+
+            $mailTo = 'lifrancucci@gmail.com';
+            $headers = "De: ".$mailFrom;
+            $txt = "Recibiste un correo de " .$name.".\r\n\n".$message;
+
+            // mail($mailTo, $message, $txt, $headers);
+            // header("Location: index.php?mailsend");
+
+            $message_sent = true;
+
+          } else {
+            $invalid_class_name = "form-invalid";
+          }
+
+        }
+        ?>
+
+        <?php
+          if($message_sent):
+        ?>
+
+        <div class="social">
+          <h3 class="section-title">Gracias.</h3>
+          <p>Nos comunicaremos a la brevedad.</p>
+        <?php
+          else:
+        ?>
         <div class="contact-form">
           <h3 class="section-title">Contactanos</h3>
 
           <div class="form-container">
-            <form class="form" action="index.html" method="post">
+            <form class="form" action="index.php" method="post">
 
               <label for="name"></label>
-              <input type="text" id="name" name="name" value="Nombre">
+              <input class="<?php $invalid_class_name ?? "" ?>" type="text" id="name" name="name" placeholder="Nombre">
 
               <label for="email"></label>
-              <input type="email" id="email" name="email" value="Email">
+              <input class="<?php $invalid_class_name ?? "" ?>" type="email" id="email" name="email" placeholder="Email">
 
               <label for="subject"></label>
-              <textarea id="subject" name="subject" placeholder="Dejanos tu mensaje...">Mensaje</textarea>
+              <textarea id="subject" name="subject" placeholder="Dejanos tu mensaje..."></textarea>
 
-              <input class="checkbox" type="checkbox" id="send-info" name="gacetilla" value="gacetilla">
-              <label class="checkbox-label" for="send-info">Quiero recibir la gacetilla</label>
+              <input class="checkbox" type="checkbox" id="send-info" name="send-info" value="Yes">
+              <label class="checkbox-label" for="send-info" value="checked">Quiero recibir la gacetilla</label>
 
               <div class="submit">
-                <input type="submit" name="" value="Enviar">
+                <input type="submit" name="submit" value="Enviar">
               </div>
 
             </form>
@@ -354,6 +396,9 @@
         </div>
 
         <div class="social">
+      <?php
+        endif;
+      ?>
           <p class="brand-title">CAS4</p>
           <div class="social-links">
             <i class="fa-brands fa-instagram"></i>

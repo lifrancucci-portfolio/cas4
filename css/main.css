@@ -450,6 +450,9 @@ section,
   border: none;
   border-radius: 5px;
 }
+.form-invalid {
+  outline: 2px solid red !important;
+}
 
 /* SOCIAL LINKS */
 .social {
