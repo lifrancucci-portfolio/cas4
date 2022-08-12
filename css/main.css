@@ -487,9 +487,10 @@ section,
   margin: 1rem;
 }
 
-/* ************ MEDIA QUERIES ************ */
-/* BIG DESKTOP UP */
-@media (min-width: 1800px) {
+/* **************** MEDIA QUERIES **************** */
+
+/* ------------- BIG MONITOR UP ------------- */
+@media screen and (min-width: 1800px) {
   html {
     font-size: 20px;
   }
@@ -536,11 +537,68 @@ section,
   .contact {
     width: 60%;
   }
+}
+
+/* ------------- MEDIUM MONITOR DOWN ------------- */
+@media screen and (max-width: 1400px) {
 
 }
 
-/* CELULAR PANTALLA PEQUEÑA - VERTICAL */
-@media (max-width: 600px) {
+/* ------------- TABLET LANDSCAPE DOWN ------------- */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* ------------- TABLET PORTRAIT DOWN ------------- */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+  section, .section {
+    width: 80%;
+  }
+  .section-title {
+    margin-bottom: 3rem;
+  }
+  /* HEADER */
+  .nav-title {
+    padding-right: .5rem;
+  }
+  .nav-ul {
+    padding-right: 1rem;
+  }
+  /* HERO */
+  .hero {
+    height: 50vh;
+    /* z-index: 99; */
+  }
+  .hero__img img {
+    height: 100%;
+    width: auto;
+  }
+  /* STATEMENT */
+  .statement {
+    height: 50vh;
+    padding-top: 10rem;
+  }
+  /* MODELS */
+  .models {
+    width: 95%;
+  }
+  /* ESPECIFICACIONES */
+  .specs-section {
+    height: auto;
+  }
+  .material:first-child {
+    margin-left: 0;
+  }
+  .material:last-child {
+    margin-right: 0;
+  }
+}
+
+/* ------------- MOBILE DEVICES DOWN ------------- */
+@media screen and (max-width: 600px) {
   /* GENERAL */
   html {
     font-size: 14px;
@@ -548,6 +606,7 @@ section,
   section, .section {
     width: 100%;
     margin-bottom: 2rem;
+    padding: 2rem;
   }
   /* HEADER */
   .header {
@@ -572,11 +631,7 @@ section,
   /* HERO */
   .hero {
     height: 40vh;
-    z-index: 99;
-  }
-  .hero__img img {
-    height: 100%;
-    width: auto;
+    /* z-index: 99; */
   }
   .overlay-piece {
     align-items: flex-end;
@@ -617,6 +672,9 @@ section,
     width: 50%;
   }
   /* ESPECIFICACIONES */
+  .specs-section {
+    height: 100vh;
+  }
   .material {
     margin: .5rem;
     height: auto;
