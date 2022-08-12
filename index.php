@@ -1,3 +1,70 @@
+<?php
+
+  // Message Vars
+  $msg = '';
+  $msgClass = '';
+
+  // Check for submit
+  if (filter_has_var(INPUT_POST, 'submit')) {
+
+    // Get Form Data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+
+
+    if(!empty($email) && !empty($name) && !empty($message)) {
+      // Passed
+      // Check email
+      if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        // Failed
+        $msg = 'Por favor, ingresá un email válido';
+        $msgClass = 'form-invalid';
+
+      } else {
+        // Passed
+        $toEmail = 'info@cas4.com.ar';
+        $subject = 'Contacto de '.$name;
+        $body = "<h2>Solicitud de Contacto<h2>\r\n";
+        $body .="<h4>De: <p>".$name."</p>\r\n";
+        $body .="<h4>Email: <p>".$email."</p>\r\n";
+        $body .="<h4>Mensaje: <p>".$message."</p>\r\n";
+
+        if(isset($_POST['send-info']) && $_POST['send-info'] == 'Yes') {
+          $body .="<h4>Desea recibir la gacetilla</h4>";
+        } else {
+          $body .="<h4>No desea recibir la gacetilla</h4>";
+        }
+
+        // Headers
+        $headers = "MIME-Version: 1.0\r\n";
+        $headers .="Content-Type: text/html; charset=UTF-8\r\n";
+
+        // Additional Headers
+        $headers .= "De: " .$name. '<'.$email.'>'. "\r\n";
+
+        if(mail($toEmail, $subject, $body, $headers)) {
+          // Email Sent
+          $msg = 'Tu consulta fue enviada. Gracias!';
+          $msgClass = 'form-valid';
+        } else {
+          // Email Failed
+          $msg = 'Hubo un error en el envío. Podés contactarnos directamente a info@cas4.com.ar';
+          $msgClass = 'form-invalid';
+        }
+
+      }
+
+    } else {
+      // Failed
+      $msg = 'Por favor, completa todos los campos';
+      $msgClass = 'form-invalid';
+    }
+
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -116,17 +183,89 @@
 
         <div class="carousel__track-container">
           <ul class="carousel__track">
+            <!-- ROCHA URUGUAY -->
             <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/gallery-carousel-1.png" alt="Test Image">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-4.png" alt="Test Image">
             </li>
             <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/gallery-carousel-2.png" alt="Test Image">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-2.png" alt="Test Image">
             </li>
             <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/gallery-carousel-3.png" alt="Test Image">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-3.png" alt="Test Image">
             </li>
             <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/gallery-carousel-4.png" alt="Test Image">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-5.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-6.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-7.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-10.png" alt="Test Image">
+            </li>
+            <!-- VILLA ESPIL ARG -->
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-2.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-3.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-4.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-5.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-6.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-7.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-8.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-9.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-10.png" alt="Test Image">
+            </li>
+            <!-- VILLA RUIZ ARG -->
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-1.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-2.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-3.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-4.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-5-1.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-5.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-6.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-6-1.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-8.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-8-1.png" alt="Test Image">
+            </li>
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-10.png" alt="Test Image">
             </li>
           </ul>
         </div>
@@ -235,8 +374,8 @@
         <p>
           <span>MATERIALES</span> <br>
           Carpinterías de PVC con vidrio DVH <br>
-          Revestimiento interior multilaminado fenólico. Acabado Hidrolaca <br>
-          Revestimiento exterior chapa color  negro <br>
+          Revestimiento interior multilaminado fenólico. Acabado Cetol Cristal <br>
+          Revestimiento exterior chapa miniwave color  negro (consultar por otras opciones de color)<br>
           Cubierta inclinada de chapa acanalada prepintada color negro <br>
           Aislación: bastidor de madera con lana de vidrio
           <br><br>
@@ -292,6 +431,24 @@
           <div class="carousel__track-container">
             <ul class="carousel__track">
               <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-1.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-3.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-4.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-5.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-6.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-7.png" alt="Test Image">
+              </li>
+              <li class="carousel__slide current-slide">
                 <img class="carousel__image" src="./ph/backstage-carousel-1.png" alt="Test Image">
               </li>
               <li class="carousel__slide">
@@ -326,62 +483,28 @@
     <div id="contact-ol" class="contact-ol">
       <section id="contact" class="contact">
 
-        <?php
-
-        $message_sent = false;
-
-        if(isset($_POST['email']) && $_POST['email'] != '') {
-
-          if(filter_var($_POST['name'], FILTER_VALIDATE_EMAIL)) {
-
-            $name = $_POST['name'];
-            $mailFrom = $_POST['email'];
-            $message = $_POST['subject'];
-
-            if($_POST['send-info'] == 'checked') {
-              $sendInfo = "Enviar gacetilla";
-            }
-
-            $mailTo = 'lifrancucci@gmail.com';
-            $headers = "De: ".$mailFrom;
-            $txt = "Recibiste un correo de " .$name.".\r\n\n".$message;
-
-            // mail($mailTo, $message, $txt, $headers);
-            // header("Location: index.php?mailsend");
-
-            $message_sent = true;
-
-          } else {
-            $invalid_class_name = "form-invalid";
-          }
-
-        }
-        ?>
-
-        <?php
-          if($message_sent):
-        ?>
-
-        <div class="social">
-          <h3 class="section-title">Gracias.</h3>
-          <p>Nos comunicaremos a la brevedad.</p>
-        <?php
-          else:
-        ?>
         <div class="contact-form">
           <h3 class="section-title">Contactanos</h3>
 
           <div class="form-container">
-            <form class="form" action="index.php" method="post">
+
+            <?php if($msg != ''): ?>
+              <div class="<?php echo $msgClass; ?>">
+                <?php echo $msg; ?>
+              </div>
+            <?php endif ?>
+
+
+            <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" method="POST">
 
               <label for="name"></label>
-              <input class="<?php $invalid_class_name ?? "" ?>" type="text" id="name" name="name" placeholder="Nombre">
+              <input class="" type="text" id="name" name="name" placeholder="Nombre" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
 
               <label for="email"></label>
-              <input class="<?php $invalid_class_name ?? "" ?>" type="email" id="email" name="email" placeholder="Email">
+              <input class="" type="email" id="email" name="email" placeholder="Email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
 
-              <label for="subject"></label>
-              <textarea id="subject" name="subject" placeholder="Dejanos tu mensaje..."></textarea>
+              <label for="message"></label>
+              <textarea id="message" name="message" placeholder="Dejanos tu mensaje..."><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
 
               <input class="checkbox" type="checkbox" id="send-info" name="send-info" value="Yes">
               <label class="checkbox-label" for="send-info" value="checked">Quiero recibir la gacetilla</label>
@@ -396,14 +519,20 @@
         </div>
 
         <div class="social">
-      <?php
-        endif;
-      ?>
-          <p class="brand-title">CAS4</p>
+
+          <a class="brand-title" href="#">
+            CAS4
+          </a>
+
           <div class="social-links">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook-square"></i>
+            <a href="https://www.instagram.com/cas4prefab/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/casacuatro/" target="_blank">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
           </div>
+
         </div>
 
       </section>

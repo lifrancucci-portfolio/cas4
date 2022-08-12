@@ -41,7 +41,6 @@
 
 /* *********** GALERÍA *********** */
 .model-gallery {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -49,63 +48,21 @@
   padding: 0 7rem 0 2rem;
 }
 .model-gallery > div {
-  /* border: 1px solid red; */
+  /* border: 2px solid red; */
 }
-.model-gallery__renders {
-  display: flex;
-  width: 100%;
-}
-.model-gallery__renders img {
-  width: 100%;
-}
-.model-gallery .col {
-  padding: 1rem;
-}
-.model-gallery .first-col {
-  width: 55%;
-  height: 100%;
-}
-.model-gallery .second-col {
-  /* border: 1px solid green; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 40%;
-}
-.col__img--top {
-  margin-bottom: 1rem;
-}
-
-.model-gallery__blueprints {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 3rem;
-}
-.model-gallery__blueprints img {
-  width: 100%;
-}
+.model-gallery__renders,
+.model-gallery__blueprints,
 .model-gallery__pictures {
   display: flex;
   flex-direction: column;
-}
-.model-gallery__pictures .first-row {
-  display: flex;
   align-items: center;
   justify-content: center;
-}
-.model-gallery__pictures .first-row img {
-  width: 50%;
-  padding: 1rem;
-}
-
-.model-gallery__pictures .second-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.model-gallery__pictures .second-row img {
   width: 100%;
-  padding: 1rem;
+}
+.model-gallery__renders img,
+.model-gallery__blueprints img,
+.model-gallery__pictures img {
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: .5rem;
 }
