@@ -66,3 +66,67 @@
   width: 75%;
   margin: .5rem;
 }
+
+/* **************** MEDIA QUERIES **************** */
+
+/* ------------- BIG MONITOR UP ------------- */
+@media screen and (min-width: 1800px) {
+
+}
+
+/* ------------- MEDIUM MONITOR DOWN ------------- */
+@media screen and (max-width: 1400px) {
+
+}
+
+/* ------------- TABLET LANDSCAPE DOWN ------------- */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* ------------- TABLET PORTRAIT DOWN ------------- */
+@media screen and (max-width: 900px) {
+  .sidebar {
+    width: 30vw;
+    padding: 1rem 0 0 1rem;
+  }
+  .model-gallery {
+    width: 70vw;
+    margin-left: 30vw;
+    padding: 0;
+  }
+}
+
+/* ------------- MOBILE DEVICES DOWN ------------- */
+@media screen and (max-width: 600px) {
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  .sidebar__model {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    width: 70px;
+    height: 90px;
+    margin: 0;
+  }
+  .sidebar__model__name {
+    font-size: 3rem;
+  }
+  .model-gallery {
+    width: 100%;
+    margin: 0;
+    padding: .5rem;
+  }
+  .model-gallery__renders img,
+  .model-gallery__blueprints img,
+  .model-gallery__pictures img {
+    width: 100%;
+  }
+}

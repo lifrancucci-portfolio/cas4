@@ -595,6 +595,7 @@ section,
   .material:last-child {
     margin-right: 0;
   }
+
 }
 
 /* ------------- MOBILE DEVICES DOWN ------------- */
@@ -607,6 +608,9 @@ section,
     width: 100%;
     margin-bottom: 2rem;
     padding: 2rem;
+  }
+  .section-title {
+    margin-bottom: 1rem;
   }
   /* HEADER */
   .header {
@@ -624,6 +628,7 @@ section,
   }
   .nav-ul {
     width: 100%;
+    height: 100vh;
     background-color: var(--clr-light);
     margin-top: -2.5rem;
     padding: 3rem .5rem 1rem;
@@ -681,7 +686,7 @@ section,
   }
   .modules {
     width: 120%;
-    height: auto;
+    height: 200px;
   }
   /* VIDEO */
   .video {

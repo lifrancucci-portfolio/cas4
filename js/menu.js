@@ -6,8 +6,12 @@ function loadMenu() {
 
   function toggleMenu() {
     if(!navMenu.classList.contains('show-menu')) {
+      mobileNav.children[0].classList.remove('fa-bars');
+      mobileNav.children[0].classList.add('fa-xmark');
       navMenu.classList.add('show-menu');
     } else {
+      mobileNav.children[0].classList.add('fa-bars');
+      mobileNav.children[0].classList.remove('fa-xmark');
       navMenu.classList.remove('show-menu');
     }
   }
