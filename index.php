@@ -1,139 +1,16 @@
 <?php
 
-  // Message Vars
-  $msg = '';
-  $msgClass = '';
+  $page_name = 'Home';
 
-  // Check for submit
-  if (filter_has_var(INPUT_POST, 'submit')) {
-
-    // Get Form Data
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
-
-    if(!empty($email) && !empty($name) && !empty($message)) {
-      // Passed
-      // Check email
-      if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-        // Failed
-        $msg = 'Por favor, ingresá un email válido';
-        $msgClass = 'form-invalid';
-
-      } else {
-        // Passed
-        $toEmail = 'info@cas4.com.ar';
-        $subject = 'Contacto de '.$name;
-        $body = "<h2>Solicitud de Contacto<h2>\r\n";
-        $body .="<h4>De: <p>".$name."</p>\r\n";
-        $body .="<h4>Email: <p>".$email."</p>\r\n";
-        $body .="<h4>Mensaje: <p>".$message."</p>\r\n";
-
-        if(isset($_POST['send-info']) && $_POST['send-info'] == 'Yes') {
-          $body .="<h4>Desea recibir la gacetilla</h4>";
-        } else {
-          $body .="<h4>No desea recibir la gacetilla</h4>";
-        }
-
-        // Headers
-        $headers = "MIME-Version: 1.0\r\n";
-        $headers .="Content-Type: text/html; charset=UTF-8\r\n";
-
-        // Additional Headers
-        $headers .= "De: " .$name. '<'.$email.'>'. "\r\n";
-
-        if(mail($toEmail, $subject, $body, $headers)) {
-          // Email Sent
-          $msg = 'Tu consulta fue enviada. Gracias!';
-          $msgClass = 'form-valid';
-        } else {
-          // Email Failed
-          $msg = 'Hubo un error en el envío. Podés contactarnos directamente a info@cas4.com.ar';
-          $msgClass = 'form-invalid';
-        }
-
-      }
-
-    } else {
-      // Failed
-      $msg = 'Por favor, completa todos los campos';
-      $msgClass = 'form-invalid';
-    }
-
-  }
+  include 'php/contact.php';
+  include './includes/head.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CAS4 - HOME</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- FONTAWESOME -->
-  <script src="https://kit.fontawesome.com/3119857d19.js" crossorigin="anonymous"></script>
-
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Lato -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <!-- Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-  <!-- JAVASCRIPT -->
-  <script src="js/main.js" charset="utf-8"></script>
-  <script src="js/menu.js" charset="utf-8"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      contentLoaded();
-      loadMenu();
-    });
-  </script>
-
-
-</head>
-
-<body id="body">
+<body id="homepage">
 
 <!-- ************* HEADER ************* -->
-  <header class="header">
-    <nav class="main-nav">
-
-      <h1 id="nav-title" class="nav-title">cas4</h1>
-      <div id="mobile-menu" class="mobile-menu ">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-
-      <ul id="nav-ul" class="nav-ul">
-        <li>
-          <a href="#statement">Statement</a>
-        </li>
-        <li>
-          <a href="#gallery">Galería</a>
-        </li>
-        <li>
-          <a href="#models">Nuestros Modelos</a>
-        </li>
-        <li>
-          <a href="#specs">Especificaciones Técnicas</a>
-        </li>
-        <li>
-          <a href="#process">Proceso</a>
-        </li>
-        <li>
-          <a href="#contact">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <?php include './includes/header.php'; ?>
 
 <!-- ************* HERO ************* -->
   <div class="hero">
@@ -288,36 +165,36 @@
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c2.html">C2</a>
+                <a href="models/c2.php">C2</a>
               </p>
-              <img class="model__img" src="./img/C2_4x.png" alt="">
+              <img class="model__img" src="./img/C2.png" alt="">
             </div>
           </div>
 
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c4.html">C4</a>
+                <a href="models/c4.php">C4</a>
               </p>
-              <img class="model__img" src="./img/C4_4x.png" alt="">
+              <img class="model__img" src="./img/C4.png" alt="">
             </div>
           </div>
 
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c5.html">C5</a>
+                <a href="models/c5.php">C5</a>
               </p>
-              <img class="model__img" src="./img/C5_4x.png" alt="">
+              <img class="model__img" src="./img/C5.png" alt="">
             </div>
           </div>
 
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c6.html">C6</a>
+                <a href="models/c6.php">C6</a>
               </p>
-              <img class="model__img" src="./img/C6_4x.png" alt="">
+              <img class="model__img" src="./img/C6.png" alt="">
             </div>
           </div>
 
@@ -326,9 +203,9 @@
         <div id="model__selected" class="model__selected">
           <div class="model">
             <p class="model__name">
-              <a href="models/c2.html">C2</a>
+              <a href="models/c2.php">C2</a>
             </p>
-            <img class="model__img" src="./img/C2_4x.png" alt="">
+            <img class="model__img" src="./img/C2.png" alt="">
           </div>
         </div>
 
@@ -338,27 +215,27 @@
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c7.html">C7</a>
+                <a href="models/c7.php">C7</a>
               </p>
-              <img class="model__img" src="./img/C7_4x.png" alt="">
+              <img class="model__img" src="./img/C7.png" alt="">
             </div>
           </div>
 
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c8.html">C8</a>
+                <a href="models/c8.php">C8</a>
               </p>
-              <img class="model__img" src="./img/C8_4x.png" alt="">
+              <img class="model__img" src="./img/C8.png" alt="">
             </div>
           </div>
 
           <div class="model__container">
             <div class="model">
               <p class="model__name">
-                <a href="models/c9.html">C9</a>
+                <a href="models/c9.php">C9</a>
               </p>
-              <img class="model__img" src="./img/C9_4x.png" alt="">
+              <img class="model__img" src="./img/C9.png" alt="">
             </div>
           </div>
 
@@ -480,66 +357,12 @@
 
   <!-- *********** CONTACTO ************* -->
 
-    <div id="contact-ol" class="contact-ol">
-      <section id="contact" class="contact">
-
-        <div class="contact-form">
-          <h3 class="section-title">Contactanos</h3>
-
-          <div class="form-container">
-
-            <?php if($msg != ''): ?>
-              <div class="<?php echo $msgClass; ?>">
-                <?php echo $msg; ?>
-              </div>
-            <?php endif ?>
-
-
-            <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" method="POST">
-
-              <label for="name"></label>
-              <input class="" type="text" id="name" name="name" placeholder="Nombre" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-
-              <label for="email"></label>
-              <input class="" type="email" id="email" name="email" placeholder="Email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-
-              <label for="message"></label>
-              <textarea id="message" name="message" placeholder="Dejanos tu mensaje..."><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-
-              <input class="checkbox" type="checkbox" id="send-info" name="send-info" value="Yes">
-              <label class="checkbox-label" for="send-info" value="checked">Quiero recibir la gacetilla</label>
-
-              <div class="submit">
-                <input type="submit" name="submit" value="Enviar">
-              </div>
-
-            </form>
-          </div>
-
-        </div>
-
-        <div class="social">
-
-          <a class="brand-title" href="#">
-            CAS4
-          </a>
-
-          <div class="social-links">
-            <a href="https://www.instagram.com/cas4prefab/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/casacuatro/" target="_blank">
-              <i class="fa-brands fa-facebook-square"></i>
-            </a>
-          </div>
-
-        </div>
-
-      </section>
+    <div id="main-contact" class="main-contact">
+      <?php include './includes/contact.php' ?>
     </div>
 
   </div>
 
 </body>
 
-</html>
+<?php include './includes/closing.php'; ?>

@@ -1,6 +1,8 @@
 function contentLoaded() {
 
-  // INTRO FADE-OUT
+  if(document.body.id == 'homepage') {
+
+    // INTRO FADE-OUT
   const heroOverlay = document.getElementById('hero__overlay');
   const introPieces = Array.from(document.querySelector('.hero__overlay').children);
 
@@ -82,7 +84,7 @@ function contentLoaded() {
   })
 
   // CONTACTO
-  const opLayer = document.getElementById('contact-ol');
+  const opLayer = document.getElementById('main-contact');
 
   // VIDEO
   const videoLayer = document.getElementById('video');
@@ -120,5 +122,6 @@ function contentLoaded() {
 
   window.addEventListener('scroll', changeOpacity(videoLayer));
 
+  }
 
 }

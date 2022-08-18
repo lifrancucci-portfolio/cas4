@@ -384,7 +384,7 @@ section,
 }
 
 /* *********** CONTACTO *********** */
-.contact-ol {
+/* .contact-ol {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -402,13 +402,12 @@ section,
   margin-top: 4rem;
 }
 .contact > div {
-  /* border: 1px solid red; */
   width: 50%;
   padding: 2rem 5rem;
-}
+} */
 
 /* CONTACT FORM */
-.contact-form {
+/* .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -422,7 +421,6 @@ section,
   border-radius: .5rem;
   padding: 1rem;
   width: 350px;
-  /* min-height: 350px; */
 }
 .form input,
 .form textarea {
@@ -468,11 +466,10 @@ section,
   padding: .5rem;
   border-radius: 2px;
   outline: 2px solid green;
-}
+} */
 
 /* SOCIAL LINKS */
-.social {
-  /* border: 1px solid white; */
+/* .social {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -485,7 +482,7 @@ section,
 .social-links i {
   font-size: 3rem;
   margin: 1rem;
-}
+} */
 
 /* **************** MEDIA QUERIES **************** */
 
@@ -534,9 +531,9 @@ section,
   .specs-section {
     height: auto;
   }
-  .contact {
+  /* .contact {
     width: 60%;
-  }
+  } */
 }
 
 /* ------------- MEDIUM MONITOR DOWN ------------- */
@@ -696,7 +693,7 @@ section,
     height: 100%;
   }
   /* CONTACTO */
-  .contact-ol {
+  /* .contact-ol {
     height: 100vh;
   }
   .contact {
@@ -723,5 +720,5 @@ section,
   .social-links i {
     font-size: 2rem;
     margin: .5rem 1rem;
-  }
+  } */
 }

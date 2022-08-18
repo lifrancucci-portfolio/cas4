@@ -22,6 +22,8 @@ function loadMenu() {
   function hideOnScroll() {
     if(navMenu.classList.contains('show-menu')) {
       navMenu.classList.remove('show-menu');
+      mobileNav.children[0].classList.remove('fa-xmark');
+      mobileNav.children[0].classList.add('fa-bars');
     }
   }
   window.addEventListener('scroll', hideOnScroll);

@@ -99,11 +99,6 @@
 
 /* ------------- MOBILE DEVICES DOWN ------------- */
 @media screen and (max-width: 600px) {
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 3rem;
-  }
   .sidebar {
     position: relative;
     width: 100%;
@@ -130,3 +125,4 @@
     width: 100%;
   }
 }
+
