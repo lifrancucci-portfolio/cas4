@@ -1,10 +1,6 @@
 <?php
-
   $page_name = 'Home';
-
-  include 'php/contact.php';
   include './includes/head.php';
-
 ?>
 
 <body id="homepage">

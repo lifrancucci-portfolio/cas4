@@ -11,6 +11,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
   }
+  .model-contact {
+    width: 80vw;
+    margin-left: 20vw;
+  }
   .contact {
     flex-direction: row;
     align-items: center;
@@ -85,6 +89,7 @@
     outline: 2px solid red;
   }
   .form-valid {
+    color: var(--clr-light);
     padding: .5rem;
     border-radius: 2px;
     outline: 2px solid green;
@@ -99,8 +104,13 @@
     justify-content: center;
   }
   .brand-title {
-    font-size: 8rem;
     font-weight: bold;
+  }
+  .main-contact .brand-title {
+    font-size: 8rem;
+  }
+  .model-contact .brand-title {
+    font-size: 6rem;
   }
   .social-links i {
     font-size: 3rem;
@@ -143,7 +153,12 @@
   @media screen and (max-width: 600px) {
     .main-contact,
     .model-contact {
+      padding-top: 2rem;
       height: 100vh;
+    }
+    .model-contact {
+        width: 100vw;
+        margin-left: 0;
     }
     .contact {
       flex-direction: column;
@@ -163,7 +178,8 @@
     .form textarea {
       height: 120px;
     }
-    .brand-title {
+    .main-contact .brand-title,
+    .model-contact .brand-title {
       font-size: 4rem;
     }
     .social-links i {

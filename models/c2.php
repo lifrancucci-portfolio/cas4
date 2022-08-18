@@ -1,10 +1,8 @@
 <?php 
-
   $page_name = 'C2';
   $modules = '2 módulos';
 
   include '../includes/head.php';
-  
 ?>
 
 <body>
