@@ -19,7 +19,7 @@
   <section class="model-gallery">
 
     <div class="model-gallery__renders">
-      <img src="../renders/frame_c2.png" alt="">
+      <img src="../renders/frame_c2.jpg" alt="">
     </div>
 
     <div class="model-gallery__blueprints">
