@@ -47,9 +47,6 @@
   margin: 0 0 7rem 20vw;
   padding: 0 7rem 0 2rem;
 }
-.model-gallery > div {
-  /* border: 2px solid red; */
-}
 .model-gallery__renders,
 .model-gallery__blueprints,
 .model-gallery__pictures {
@@ -58,6 +55,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+.model-gallery__blueprints {
+  margin: 3rem 0;
 }
 .model-gallery__renders img,
 .model-gallery__blueprints img,

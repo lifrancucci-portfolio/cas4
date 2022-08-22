@@ -29,9 +29,9 @@
     </div>
 
     <div class="model-gallery__pictures">
-      <img src="../ph/ph_frame_c6-1.png" alt="">
-      <img src="../ph/ph_frame_c6-2.png" alt="">
-      <img src="../ph/ph_frame_c6-3.png" alt="">
+      <img src="../ph/ph_frame_c6-1.jpg" alt="">
+      <img src="../ph/ph_frame_c6-2.jpg" alt="">
+      <img src="../ph/ph_frame_c6-3.jpg" alt="">
     </div>
 
   </section>

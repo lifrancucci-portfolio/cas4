@@ -23,7 +23,7 @@
     </div>
 
     <div class="model-gallery__blueprints">
-      <img src="../bp/bp_c2.png" alt="">
+      <img src="../bp/bp_c2.jpg" alt="">
     </div>
 
     <!-- <div class="model-gallery__pictures">

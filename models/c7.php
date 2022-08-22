@@ -28,8 +28,8 @@
     </div>
 
     <div class="model-gallery__pictures">
-      <img src="../ph/ph_frame_c7-1.png" alt="">
-      <img src="../ph/ph_frame_c7-2.png" alt="">
+      <img src="../ph/ph_frame_c7-1.jpg" alt="">
+      <img src="../ph/ph_frame_c7-2.jpg" alt="">
     </div>
 
   </section>
