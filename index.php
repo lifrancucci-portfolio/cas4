@@ -56,89 +56,116 @@
 
         <div class="carousel__track-container">
           <ul class="carousel__track">
-            <!-- ROCHA URUGUAY -->
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-4.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-2.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-3.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-5.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-6.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-7.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide">
-              <img class="carousel__image" src="./ph/ph_rocha_uy-10.png" alt="Test Image">
-            </li>
             <!-- VILLA ESPIL ARG -->
             <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-2.png" alt="Test Image">
+              <img class="carousel__image" src="./ph/ph_espil_ar-2.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-3.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-4.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-5.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-6.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
             </li>
             <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-3.png" alt="Test Image">
+              <img class="carousel__image" src="./ph/ph_espil_ar-7.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-4.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-8.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-5.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-9.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-6.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-7.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-8.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-9.png" alt="Test Image">
-            </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_espil_ar-10.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_espil_ar-10.png" alt="Foto de proyectos en Villa Espil, Argentina">
+              <p>Villa Espil, Argentina</p>
             </li>
             <!-- VILLA RUIZ ARG -->
-            <li class="carousel__slide current-slide">
+            <li class="carousel__slide">
               <img class="carousel__image" src="./ph/ph_ruiz_ar-1.png" alt="Test Image">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-2.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-2.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-3.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-3.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-4.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-4.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-5-1.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-5-1.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-5.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-5.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-6.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-6.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-6-1.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-6-1.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-8.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-8.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-8-1.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-8-1.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
             </li>
-            <li class="carousel__slide current-slide">
-              <img class="carousel__image" src="./ph/ph_ruiz_ar-10.png" alt="Test Image">
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_ruiz_ar-10.png" alt="Foto de proyectos en Villa Ruiz, Argentina">
+              <p>Villa Ruiz, Argentina</p>
+            </li>
+            <!-- ROCHA URUGUAY -->
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-4.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-2.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-3.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-5.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-6.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-7.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="./ph/ph_rocha_uy-10.png" alt="Foto de proyectos en Rocha, Uruguay">
+              <p>Rocha, Uruguay</p>
             </li>
           </ul>
         </div>
@@ -163,7 +190,7 @@
               <p class="model__name">
                 <a href="models/c2.php">C2</a>
               </p>
-              <img class="model__img" src="./img/C2.png" alt="">
+              <img class="model__img" src="./img/C2.png" alt="Diagrama axonométrico del modelo C2">
             </div>
           </div>
 
@@ -172,7 +199,7 @@
               <p class="model__name">
                 <a href="models/c4.php">C4</a>
               </p>
-              <img class="model__img" src="./img/C4.png" alt="">
+              <img class="model__img" src="./img/C4.png" alt="Diagrama axonométrico del modelo C4">
             </div>
           </div>
 
@@ -181,7 +208,7 @@
               <p class="model__name">
                 <a href="models/c5.php">C5</a>
               </p>
-              <img class="model__img" src="./img/C5.png" alt="">
+              <img class="model__img" src="./img/C5.png" alt="Diagrama axonométrico del modelo C5">
             </div>
           </div>
 
@@ -190,7 +217,7 @@
               <p class="model__name">
                 <a href="models/c6.php">C6</a>
               </p>
-              <img class="model__img" src="./img/C6.png" alt="">
+              <img class="model__img" src="./img/C6.png" alt="Diagrama axonométrico del modelo C6">
             </div>
           </div>
 
@@ -201,7 +228,7 @@
             <p class="model__name">
               <a href="models/c2.php">C2</a>
             </p>
-            <img class="model__img" src="./img/C2.png" alt="">
+            <img class="model__img" src="./img/C2.png" alt="Diagrama axonométrico del modelo C2">
           </div>
         </div>
 
@@ -213,7 +240,7 @@
               <p class="model__name">
                 <a href="models/c7.php">C7</a>
               </p>
-              <img class="model__img" src="./img/C7.png" alt="">
+              <img class="model__img" src="./img/C7.png" alt="Diagrama axonométrico del modelo C7">
             </div>
           </div>
 
@@ -222,7 +249,7 @@
               <p class="model__name">
                 <a href="models/c8.php">C8</a>
               </p>
-              <img class="model__img" src="./img/C8.png" alt="">
+              <img class="model__img" src="./img/C8.png" alt="Diagrama axonométrico del modelo C8">
             </div>
           </div>
 
@@ -231,7 +258,7 @@
               <p class="model__name">
                 <a href="models/c9.php">C9</a>
               </p>
-              <img class="model__img" src="./img/C9.png" alt="">
+              <img class="model__img" src="./img/C9.png" alt="Diagrama axonométrico del modelo C9">
             </div>
           </div>
 
@@ -247,7 +274,7 @@
         <p>
           <span>MATERIALES</span> <br>
           Carpinterías de PVC con vidrio DVH <br>
-          Revestimiento interior multilaminado fenólico. Acabado Cetol Cristal <br>
+          Revestimiento interior multilaminado fenólico. Acabado con protector para madera al agua satinado <br>
           Revestimiento exterior chapa miniwave color  negro (consultar por otras opciones de color)<br>
           Cubierta inclinada de chapa acanalada prepintada color negro <br>
           Aislación: bastidor de madera con lana de vidrio
@@ -258,10 +285,10 @@
             <img src="./img/ph_fenolico.jpg" alt="Material: Fenólico">
           </div>
           <div class="material">
-            <img src="./img/ph_quadroline1.jpg" alt="Material: Chapa Quadroline">
+            <img src="./img/ph_quadroline.jpg" alt="Material: Chapa Quadroline">
           </div>
           <div class="material">
-            <img src="./img/ph_vidrio2.jpg" alt="Material: Vidrio DVH">
+            <img src="./img/ph_azulejo.jpg" alt="Material: Azulejo blanco">
           </div>
         </div>
       </div>
@@ -303,35 +330,41 @@
 
           <div class="carousel__track-container">
             <ul class="carousel__track">
-              <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-1.png" alt="Test Image">
+            <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-0.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-3.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-1.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-4.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-3.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-5.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-4.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-6.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-5.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-7.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-6.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide current-slide">
-                <img class="carousel__image" src="./ph/backstage-carousel-1.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-7.png" alt="Fotografía del proceso de construcción de las viviendas">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-8.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide">
-                <img class="carousel__image" src="./ph/backstage-carousel-2.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-9.png" alt="Fotografía del proceso de construcción de las viviendas">
+              </li>
+              <li class="carousel__slide current-slide">
+                <img class="carousel__image" src="./ph/backstage-2.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide">
-                <img class="carousel__image" src="./ph/backstage-carousel-3.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-10.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
               <li class="carousel__slide">
-                <img class="carousel__image" src="./ph/backstage-carousel-4.png" alt="Test Image">
+                <img class="carousel__image" src="./ph/backstage-11.png" alt="Fotografía del proceso de construcción de las viviendas">
               </li>
             </ul>
           </div>

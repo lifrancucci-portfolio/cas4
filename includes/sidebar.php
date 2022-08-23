@@ -18,7 +18,7 @@
 
       MATERIALES <br>
       Carpinterías de PVC con vidrio DVH <br>
-      Revestimiento interior multilaminado fenólico. Avabado Cetol Cristal <span>(*)</span><br>
+      Revestimiento interior multilaminado fenólico. Acabado con protector para madera al agua satinado <span>(*)</span><br>
       Revestimiento exterior chapa miniwave color negro <span>(**)</span><br>
       Cubierta inclinada de chapa acanalada prepintada color negro <br>
       Aislación: bastidor de madera con lana de vidrio
