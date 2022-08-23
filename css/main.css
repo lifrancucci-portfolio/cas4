@@ -66,7 +66,6 @@ section,
 
 /* *************** HEADER *************** */
 .header {
-  /* border: 1px solid green; */
   display: flex;
   position: sticky;
   top: 0;
@@ -78,12 +77,10 @@ section,
 }
 .main-nav {
   display: flex;
-  /* border: 1px solid red; */
   position: relative;
   align-items: flex-end;
 }
 .nav-title {
-  /* border: 1px solid yellow; */
   padding-right: 4rem;
   font-size: 2rem;
   text-transform: uppercase;
@@ -178,21 +175,18 @@ section,
 }
 /* *************** GALERIA *************** */
 .carousel {
-  /* border: 1px solid red; */
   position: relative;
   width: 600px;
   height: 600px;
   margin: 0 auto;
 }
 .carousel__track-container {
-  /* border: 1px solid green; */
   background: lightgray;
   position: relative;
   height: 100%;
   overflow: hidden;
 }
 .carousel__track {
-  /* border: 1px solid yellow; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -201,7 +195,6 @@ section,
   transition: transform 250ms ease-in;
 }
 .carousel__slide {
-  /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,34 +258,25 @@ section,
   width: 90%;
 }
 .models-display {
-  /* border: 1px solid purple; */
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
 }
-.models-sidebar,
-.model-selected {
-  /* border: 1px solid red; */
-}
 .models-sidebar {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 20%;
-  /* height: auto; */
 }
 .model__selected {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
   justify-content: center;
   width: 60%;
-  /* height: auto; */
 }
 .model {
   display: flex;
@@ -302,7 +286,6 @@ section,
   cursor: pointer;
 }
 .models-sidebar .model {
-  /* border: 1px solid green; */
   width: 50px;
   height: 80px;
   margin: 1rem;
@@ -448,9 +431,6 @@ section,
   .specs-section {
     height: auto;
   }
-  /* .contact {
-    width: 60%;
-  } */
 }
 
 /* ------------- MEDIUM MONITOR DOWN ------------- */
@@ -484,7 +464,6 @@ section,
   /* HERO */
   .hero {
     height: 50vh;
-    /* z-index: 99; */
   }
   .hero__img img {
     height: 100%;
@@ -550,7 +529,6 @@ section,
   /* HERO */
   .hero {
     height: 40vh;
-    /* z-index: 99; */
   }
   .overlay-piece {
     align-items: flex-end;

@@ -1,6 +1,5 @@
 /* *********** SIDEBAR *********** */
 .sidebar {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +61,6 @@
 .model-gallery__renders img,
 .model-gallery__blueprints img,
 .model-gallery__pictures img {
-  /* border: 1px solid red; */
   width: 75%;
   margin: .5rem;
 }
