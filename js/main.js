@@ -17,6 +17,14 @@ function contentLoaded() {
     }
   } (0));
 
+  // STATEMENT
+  // const statement = document.getElementById('statement');
+  // const statementTitle = statement.querySelector('.section-title');
+  // let statementWidth = statementTitle.offsetWidth + 'px';
+
+  // statement.style.width = 'calc(1em + ' + statementWidth + ')';
+  
+
   // CAROUSELS
   const galleryCarousel = document.getElementById('gallery-carousel');
   const backstageCarousel = document.getElementById('backstage-carousel');

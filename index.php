@@ -36,12 +36,14 @@
 
       <h2 class="section-title">Creamos espacios transformadores</h2>
       <p class="text-body">
-        Desde 2010 diseñamos y construimos casas modulares sustentables con un alto acento en el diseño.
-        <br><br>
-        Casas pensadas para simplificar el proceso de construir una vivienda, minimizando el uso de energías convencionales y reduciendo la contaminación, desde su fabricación hasta su instalación en sintonía con la naturaleza.
-        <br><br>
-        CAS4 crea una nueva forma de concebir el vivir.
-        <br><br>
+      Casas de diseño, modulares, prefabricadas y auto-sustentables.
+      <br><br>
+      Nuestro objetivo es simplificar el proceso de construcción de una vivienda, minimizando al máximo el uso de energías convencionales y la contaminación. 
+      <br><br>
+      Nos planteamos un formato de vida sustentable y ecosistémico desde su fabricación hasta su instalación y que estén siempre ligadas a la naturaleza.
+      <br><br>
+      Desde 2010.
+      <br><br>
       </p>
 
     </section>
