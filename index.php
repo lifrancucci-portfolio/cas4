@@ -2,12 +2,9 @@
   $page_name = 'Home';
   include './includes/head.php';
 ?>
-
 <body id="homepage">
-
 <!-- ************* HEADER ************* -->
   <?php include './includes/header.php'; ?>
-
 <!-- ************* HERO ************* -->
   <div class="hero">
     <div class="hero__img">
@@ -28,12 +25,9 @@
       </div>
     </div>
   </div>
-
   <div class="page-container">
-
 <!-- ************* STATEMENT ************* -->
     <section id="statement" class="section statement">
-
       <h2 class="section-title">Creamos espacios transformadores</h2>
       <p class="text-body">
       Casas de diseño, modulares, prefabricadas y auto-sustentables.
@@ -45,17 +39,13 @@
       Desde 2010.
       <br><br>
       </p>
-
     </section>
-
   <!-- ************* GALERIA ************* -->
     <section id="gallery" class="section gallery">
       <div id="gallery-carousel" class="carousel">
-
         <button class="carousel__button carousel__button--left">
           <i class="fa-solid fa-angle-left"></i>
         </button>
-
         <div class="carousel__track-container">
           <ul class="carousel__track">
             <!-- VILLA ESPIL ARG -->
@@ -171,22 +161,17 @@
             </li>
           </ul>
         </div>
-
         <button class="carousel__button carousel__button--right">
           <i class="fa-solid fa-angle-right"></i>
         </button>
-
       </div>
     </section>
-    <!-- ----------------------- -->
-
   <!-- ************* MODELOS ************* -->
     <section id="models" class="section models">
       <h2 class="section-title">Nuestros Modelos</h2>
-
       <div class="models-display">
         <div class="models-sidebar left">
-
+          <!-- MODELO C2 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -195,7 +180,7 @@
               <img class="model__img" src="./img/C2.png" alt="Diagrama axonométrico del modelo C2">
             </div>
           </div>
-
+          <!-- MODELO C4 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -204,7 +189,7 @@
               <img class="model__img" src="./img/C4.png" alt="Diagrama axonométrico del modelo C4">
             </div>
           </div>
-
+          <!-- MODELO C5 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -213,7 +198,7 @@
               <img class="model__img" src="./img/C5.png" alt="Diagrama axonométrico del modelo C5">
             </div>
           </div>
-
+          <!-- MODELO C6 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -222,9 +207,8 @@
               <img class="model__img" src="./img/C6.png" alt="Diagrama axonométrico del modelo C6">
             </div>
           </div>
-
         </div>
-<!-- ************************************* -->
+<!-- ********* MODELO CENTRAL ********* -->
         <div id="model__selected" class="model__selected">
           <div class="model">
             <p class="model__name">
@@ -233,10 +217,9 @@
             <img class="model__img" src="./img/C2.png" alt="Diagrama axonométrico del modelo C2">
           </div>
         </div>
-
 <!-- ************************************* -->
         <div class="models-sidebar right">
-
+          <!-- MODELO C7 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -245,7 +228,7 @@
               <img class="model__img" src="./img/C7.png" alt="Diagrama axonométrico del modelo C7">
             </div>
           </div>
-
+          <!-- MODELO C8 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -254,7 +237,7 @@
               <img class="model__img" src="./img/C8.png" alt="Diagrama axonométrico del modelo C8">
             </div>
           </div>
-
+          <!-- MODELO C9 -->
           <div class="model__container">
             <div class="model">
               <p class="model__name">
@@ -263,13 +246,10 @@
               <img class="model__img" src="./img/C9.png" alt="Diagrama axonométrico del modelo C9">
             </div>
           </div>
-
         </div>
       </div>
     </section>
-
   <!-- ******** ESPECIFICACIONES ******** -->
-
     <section id="specs" class="section specs">
       <div class="specs-section">
         <h2 class="section-title">Especificaciones Técnicas</h2>
@@ -301,35 +281,26 @@
           Una casa se puede componer de la cantidad de módulos que el cliente considere <br>
           Contamos con modelos estándar de casas
           <br><br>
-
           <span>ESTRUCTURA</span> <br>
           Estructura de madera certificada
           <br><br>
-
           <span>FUNDACIONES</span> <br>
           Fundaciones de hormigón armado
           <br><br>
         </p>
-
         <div class="modules">
           <video muted="" autoplay="" loop="">
             <source src="./video/animacion.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-
     </section>
-
-
-
     <!-- *********** GALERIA 2 *********** -->
       <section id="process" class="section gallery">
         <div id="backstage-carousel" class="carousel">
-
           <button class="carousel__button carousel__button--left">
             <i class="fa-solid fa-angle-left"></i>
           </button>
-
           <div class="carousel__track-container">
             <ul class="carousel__track">
             <li class="carousel__slide current-slide">
@@ -370,30 +341,21 @@
               </li>
             </ul>
           </div>
-
           <button class="carousel__button carousel__button--right">
             <i class="fa-solid fa-angle-right"></i>
           </button>
-
         </div>
       </section>
-      <!-- ----------------------- -->
-
   <!-- *********** VIDEO ************* -->
     <section id="video" class="video">
       <video muted="" autoplay="" loop="">
         <source src="./video/bg.mp4" type="video/mp4">
       </video>
     </section>
-
   <!-- *********** CONTACTO ************* -->
-
     <div id="main-contact" class="main-contact">
       <?php include './includes/contact.php' ?>
     </div>
-
   </div>
-
 </body>
-
 <?php include './includes/closing.php'; ?>
