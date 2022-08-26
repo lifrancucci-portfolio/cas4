@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
   .contact > div {
     width: 50%;
@@ -145,6 +145,16 @@
   
   /* ------------- TABLET PORTRAIT DOWN ------------- */
   @media screen and (max-width: 900px) {
+    .model-contact {
+      width: 70vw;
+      margin-left: 30vw;
+    }
+    .model-contact .contact {
+      flex-direction: column;
+    }
+    .model-contact .social-links {
+      display: flex;
+    }
   
   }
   

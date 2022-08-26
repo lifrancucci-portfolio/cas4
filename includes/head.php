@@ -1,5 +1,7 @@
 <?php
 
+    // Para subirlo a la web cambiar por:
+    // $root = "/";
     $root = "/cas4/web/";
 
 ?>
@@ -30,8 +32,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- JAVASCRIPT -->
-  <script src="<?php echo $root; ?>js/main.js" charset="utf-8"></script>
   <script src="<?php echo $root; ?>js/menu.js" charset="utf-8"></script>
+  <script src="<?php echo $root; ?>js/main.js" charset="utf-8"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       contentLoaded();

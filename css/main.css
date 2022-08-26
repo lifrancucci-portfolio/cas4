@@ -169,6 +169,7 @@ section,
 }
 .statement .text-body {
   font-weight: 300;
+  line-height: 1.5;
 }
 /* *************** GALERIA *************** */
 .carousel {
@@ -466,6 +467,9 @@ section,
     height: 100%;
     width: auto;
   }
+  .overlay-char {
+    font-size: 12rem;
+  }
   /* STATEMENT */
   .statement {
     height: 50vh;
@@ -532,6 +536,10 @@ section,
   }
   .overlay-char {
     font-size: 5rem;
+  }
+  /* STATEMENT */
+  .statement {
+    padding-top: 10rem;
   }
   /* CAROUSEL */
   .gallery {

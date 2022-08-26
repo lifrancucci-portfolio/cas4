@@ -11,7 +11,7 @@
 <!-- ************* HERO ************* -->
   <div class="hero">
     <div class="hero__img">
-      <img src="./ph/cas4-hero_glossy.png" alt="Panorama">
+      <img src="./ph/hero-background-lossless.jpg" alt="Panorama">
     </div>
     <div id="hero__overlay" class="hero__overlay">
       <div class="overlay-piece">

@@ -2,8 +2,8 @@ function contentLoaded() {
 
   if(document.body.id == 'homepage') {
 
-    // INTRO FADE-OUT
-  const heroOverlay = document.getElementById('hero__overlay');
+  // INTRO FADE-OUT
+  // const heroOverlay = document.getElementById('hero__overlay');
   const introPieces = Array.from(document.querySelector('.hero__overlay').children);
 
   (function introFadeOut(n) {
@@ -12,18 +12,10 @@ function contentLoaded() {
         let i = n -1;
         introPieces[i].classList.add('fade-out');
         introFadeOut(n);
-      }, 1000);
+      }, 1500);
       n++;
     }
   } (0));
-
-  // STATEMENT
-  // const statement = document.getElementById('statement');
-  // const statementTitle = statement.querySelector('.section-title');
-  // let statementWidth = statementTitle.offsetWidth + 'px';
-
-  // statement.style.width = 'calc(1em + ' + statementWidth + ')';
-  
 
   // CAROUSELS
   const galleryCarousel = document.getElementById('gallery-carousel');
